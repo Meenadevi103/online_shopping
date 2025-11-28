@@ -1,0 +1,118 @@
+/* Custom Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #0C0C0C;
+}
+
+/* Material Design Card Hover Effect */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    border-radius: 10px;
+    border-left: 4px solid #FF5A47;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(200, 90, 58, 0.2);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: #FF5A47;
+    border-color: #FF5A47;
+}
+
+.btn-primary:hover {
+    background-color: #C85A3A;
+    border-color: #C85A3A;
+}
+
+.btn-warning {
+    background-color: #C85A3A;
+    border-color: #C85A3A;
+}
+
+.btn-warning:hover {
+    background-color: #A64A2A;
+    border-color: #A64A2A;
+}
+
+.btn-danger {
+    background-color: #FF5A47;
+    border-color: #FF5A47;
+}
+
+.btn-danger:hover {
+    background-color: #E63D2F;
+    border-color: #E63D2F;
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(135deg, #3D2817 0%, #0C0C0C 100%);
+    color: white;
+}
+
+header h1 {
+    color: #FF5A47;
+    font-weight: 700;
+}
+
+header .lead {
+    color: #E8E8E8;
+}
+
+header .btn-primary {
+    background-color: #FF5A47;
+    color: white;
+    border-color: #FF5A47;
+}
+
+header .btn-primary:hover {
+    background-color: #C85A3A;
+    color: white;
+    border-color: #C85A3A;
+}
+
+/* Footer */
+footer {
+    background-color: #0C0C0C;
+    color: #E8E8E8;
+}
+
+footer p {
+    color: #E8E8E8;
+}
+
+/* Sections */
+section h2 {
+    color: #3D2817;
+    font-weight: 700;
+}
+
+/* Card text */
+.card-title {
+    color: #3D2817;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #666;
+}
