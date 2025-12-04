@@ -1,6 +1,6 @@
-# ShopEasy - Online Shopping Website
+# Zentra - Online Fashion Shopping Website
 
-A responsive and dynamic online shopping website developed using HTML, CSS, Bootstrap 5, JavaScript, and LocalStorage.
+A responsive and dynamic online fashion shopping website developed using HTML, CSS, Bootstrap 5, JavaScript, and LocalStorage.
 
 ## Features
 
@@ -26,7 +26,7 @@ A responsive and dynamic online shopping website developed using HTML, CSS, Boot
 4.  **Products (`products.html`)**: Displays all products. Admins see "Add Product" and "Edit/Delete" buttons.
 5.  **Add Product (`add-product.html`)**: Admin-only page to create new products.
 6.  **Edit Product (`edit-product.html`)**: Admin-only page to update existing products.
-7.  **Cart (`cart.html`)**: Shopping cart with total calculation and checkout.
+5.  **Cart (`cart.html`)**: Shopping cart with total calculation and checkout.
 
 ## How to Run
 
@@ -34,7 +34,7 @@ A responsive and dynamic online shopping website developed using HTML, CSS, Boot
 2.  Open `index.html` in any modern web browser.
 3.  **Register** a new account (Select 'Admin' role to test admin features).
 4.  **Login** with your credentials.
-5.  Start shopping or managing products!
+5.  Start shopping or managing products on Zentra!
 
 ## LocalStorage Data Structure
 

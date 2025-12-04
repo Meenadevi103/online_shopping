@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Redirect to login if not authenticated and on index page
     const currentPage = window.location.pathname;
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    
+
     if (currentPage.includes('index.html') || currentPage.endsWith('/')) {
         if (!currentUser) {
             window.location.href = 'login.html';
             return;
         }
     }
-    
+
     updateAuthLinks();
     updateCartCount();
 });
@@ -26,10 +26,13 @@ function updateAuthLinks() {
             <li class="nav-item"><span class="nav-link text-white">Welcome, ${currentUser.name}</span></li>
             <li class="nav-item"><a class="nav-link" href="#" onclick="logout()">Logout</a></li>
         `;
-        
-        // If admin, add admin links (optional, can be done in specific pages too)
+
+        // If admin, add admin links
         if (currentUser.role === 'admin') {
-             // Could add Admin Dashboard link here
+            authLinks.innerHTML = `
+                <li class="nav-item"><a class="nav-link text-warning fw-bold" href="admin-dashboard.html">Admin Dashboard</a></li>
+                ${authLinks.innerHTML}
+             `;
         }
 
     } else {
@@ -46,7 +49,7 @@ function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     // Calculate total quantity
     const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-    if(cartCountElement) {
+    if (cartCountElement) {
         cartCountElement.textContent = totalCount;
     }
 }

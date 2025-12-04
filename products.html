@@ -50,6 +50,36 @@
                 </a>
             </div>
 
+            <!-- Category Filter Section -->
+            <div class="mb-4">
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                    <span class="fw-bold me-2">
+                        <span class="material-icons align-middle">filter_list</span>
+                        Filter by Category:
+                    </span>
+                    <button onclick="filterProducts('all')" class="btn btn-outline-primary category-filter-btn active">
+                        All Products
+                    </button>
+                    <button onclick="filterProducts('Electronics')" class="btn btn-outline-primary category-filter-btn">
+                        <span class="material-icons align-middle" style="font-size: 18px;">devices</span>
+                        Electronics
+                    </button>
+                    <button onclick="filterProducts('Fashion')" class="btn btn-outline-primary category-filter-btn">
+                        <span class="material-icons align-middle" style="font-size: 18px;">checkroom</span>
+                        Fashion
+                    </button>
+                    <button onclick="filterProducts('Home & Garden')"
+                        class="btn btn-outline-primary category-filter-btn">
+                        <span class="material-icons align-middle" style="font-size: 18px;">home</span>
+                        Home & Garden
+                    </button>
+                    <button onclick="filterProducts('Sports')" class="btn btn-outline-primary category-filter-btn">
+                        <span class="material-icons align-middle" style="font-size: 18px;">sports_basketball</span>
+                        Sports
+                    </button>
+                </div>
+            </div>
+
             <div class="row" id="product-list">
                 <!-- Products will be dynamically inserted here -->
                 <div class="col-12 text-center">
